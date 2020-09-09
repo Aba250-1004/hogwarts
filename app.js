@@ -86,3 +86,89 @@ ul.appendChild(li5);
 const li6 = document.createElement("li");
 li6.innerText = "Bertie Bott's Every Flavor Jelly Beans";
 ul.appendChild(li6);
+
+// year 4
+
+// make a table
+const table = document.createElement("table");
+// console.log(table);
+container.appendChild(table);
+
+// Right above your table add an h5 that says 'Spring 2017'
+const h5 = document.createElement("h5");
+h5.innerText = "Spring 2017";
+// console.log(h5);
+container.insertBefore(h5,table);
+// Inside the table add a thead element
+const thead = document.createElement("thead");
+// console.log(thead);
+table.appendChild(thead)
+// Inside the thead element add two th elements
+// in the first th add the text Day
+const th1 = document.createElement("th");
+th1.innerText = "Day";
+thead.appendChild(th1);
+// in the second th add the text Classes
+const th2 = document.createElement("th");
+th2.innerText = "Classes";
+thead.appendChild(th2);
+// Create a tr element and add two td elements inside.
+const tr = document.createElement("tr");
+const tdMD = document.createElement("td");
+const tdMC = document.createElement("td");
+table.appendChild(tr);
+// in the first td add the day Monday
+tdMD.innerHTML = "Monday";
+tr.appendChild(tdMD)
+// in the second td add the classes you are taking 
+// ( Herbology, Divination, History of Magic, Charms, Potions,
+// Transfiguration, Defense Against the Dark Arts, Quidditch 
+// practice, etc.)
+tdMC.innerHTML = "Herbology";
+tr.appendChild(tdMC)
+
+// Create more tr elements with tds inside so that you
+//  have Monday - Friday and classes each of those days
+const tr1 = document.createElement("tr");
+const tdTD = document.createElement("td");
+const tdTC = document.createElement("td");
+table.appendChild(tr1);
+
+tdTD.innerHTML = "Tuesday";
+tr1.appendChild(tdTD)
+
+tdTC.innerHTML = "Divination and Defense Against the Dark Arts";
+tr1.appendChild(tdTC)
+
+const tr2 = document.createElement("tr");
+const tdWD = document.createElement("td");
+const tdWC = document.createElement("td");
+table.appendChild(tr2);
+
+tdWD.innerHTML = "Wednesday";
+tr2.appendChild(tdWD)
+
+tdWC.innerHTML = "Charms";
+tr2.appendChild(tdWC)
+
+const tr3 = document.createElement("tr");
+const tdTHD = document.createElement("td");
+const tdTHC = document.createElement("td");
+table.appendChild(tr3);
+
+tdTHD.innerHTML = "Thursday";
+tr3.appendChild(tdTHD)
+
+tdTHC.innerHTML = "Potions";
+tr3.appendChild(tdTHC)
+
+const tr4 = document.createElement("tr");
+const tdFD = document.createElement("td");
+const tdFC = document.createElement("td");
+table.appendChild(tr4);
+
+tdFD.innerHTML = "Friday";
+tr4.appendChild(tdFD)
+
+tdFC.innerHTML = "Quitditch Practice";
+tr4.appendChild(tdFC)
