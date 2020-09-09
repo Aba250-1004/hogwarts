@@ -231,3 +231,18 @@ h4.className += " cabbage";
 //cabbage (be sure to keep your pet's leash's original class)
 h4.classList.remove("cabbage");
 // console.log(h4);
+
+// year 7
+// Update your class schedule to read 'Fall 2018'
+h5.innerText = "Fall 2018";
+// Celebrate by buying more butter beer! Append
+// a list item with the text 'Butter beer' as the 
+// first list item inside your unordered list with the value of trunk
+ul.insertBefore(li1,li2);
+// Whoops! You broke your trunk when you stood on 
+// it while singing karaoke. Get a new storage container 
+// for your stuff; replace the unodered list's property 
+// of trunk with a new property of chest
+ul.setAttribute("data-storage","chest");
+console.log(ul);
+// Add some CSS to your page. Feel free to experiment and make this page your own
