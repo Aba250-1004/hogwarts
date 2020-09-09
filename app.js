@@ -200,3 +200,34 @@ container.appendChild(h4);
 // DOM, put it back in its original location)
 h4.remove();
 container.insertBefore(h4,h42);
+
+// year 6
+
+// Nosey roommate alert! Hide all your belongings 
+// with a class of secret.
+const secretItems = document.getElementsByClassName('secret');
+console.log(secretItems);
+for(item of secretItems){
+    item.style.visibility = "hidden";
+}
+
+// Nosey roommate falls asleep 2 seconds later. 
+// Show your secret belongings after 2+ seconds using 
+// a setTimeout to prevent showing your secret elements too soon.
+setTimeout(function (){
+    for (item of secretItems) {
+        item.style.visibility = "visible";
+    }
+},2000)
+
+// Accident! You transmogrified your pet's leash into half cabbage
+// add the class cabbage to your pet's leash. 
+// Do not replace your pet's leash's original class.  
+// Your pet, which also has the same class should remain unaffected
+h4.className += " cabbage";
+// console.log(h4);
+
+// Fix your pet's leash by removing the class of 
+//cabbage (be sure to keep your pet's leash's original class)
+h4.classList.remove("cabbage");
+// console.log(h4);
